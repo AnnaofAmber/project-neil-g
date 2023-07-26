@@ -1,0 +1,155 @@
+:root {
+  --color-accent: #404e6a;
+  --color-main-font: #e2e6ed;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-main-font);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/**
+  |============================
+  | header
+  |============================
+*/
+.header {
+  background-color: var(--color-accent);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.navigation {
+}
+.nav-list {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+}
+.nav-list-item {
+}
+.nav-link {
+  font-size: large;
+  font-weight: 500;
+  color: var(--color-main-font);
+}
+
+/**
+  |============================
+  | hero
+  |============================
+*/
+.hero {
+}
+.hero-bgd {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/blurred-image-many-old-books-bookshelf-library-81867124.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+.hero-content {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 100px;
+}
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/**
+  |============================
+  | BIO
+  |============================
+*/
+.bio {
+  display: flex;
+  gap: 40px;
+}
+.bio-content {
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+.bio-text-content {
+}
+.bio-header {
+  color: var(--color-accent);
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+.bio-text {
+  background-color: rgba(64, 78, 106, 0.4);
+  border-radius: 10px;
+  min-width: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bio-image {
+  display: block;
+  height: 259px;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  padding: 20px;
+  max-height: 320px;
+  border: 10px dotted rgba(64, 78, 106, 0.4);
+}
+.gallery__image {
+  display: block;
+  max-height: 240px;
+}
+.gallery__image:hover {
+  transform: scale(1.03);
+}
+.gallery__item {
+  position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+.gallery__link {
+  display: block;
+  text-decoration: none;
+  height: 100%;
+}
+
+.gallery__link:hover {
+  cursor: zoom-in;
+}
